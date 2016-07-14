@@ -1,0 +1,106 @@
+package com.flp.ems.service;
+
+import java.util.List;
+
+import com.flp.ems.dao.IemployeeDao;
+import com.flp.ems.domain.Department;
+import com.flp.ems.domain.Employee;
+import com.flp.ems.domain.Role;
+import com.flp.ems.domain.project;
+
+public class EmplyeeServiceImpl implements IEmployeeService {
+
+IemployeeDao empDao;
+public EmplyeeServiceImpl()
+{
+	empDao=new EmployeeDaoImplForList();
+}
+	
+	
+	public void addEmployee(Map empDetails){
+	
+		Employee employee=new Employee();
+		Department department=new Department();
+		project project=new project();
+		Role role=new Role();
+
+		employee.setEmpid((Integer) empDetails.get("empId"));
+		employee.setEmpName((String) empDetails.get("empName"));
+
+		department.setDeptId((Integer) empDetails.get("deptId"));
+		department.setDeptName((String) empDetails.get("deptName"));
+
+		employee.setDepartment(department);
+
+		project.setProjId((Integer) empDetails.get("projId"));
+		project.setProjName((String) empDetails.get("projName"));
+		project.setDepartment(department);
+
+		employee.setProject(project);
+
+		role.setRoleId((Integer) empDetails.get("roleId"));
+		role.setRoleName((String) empDetails.get("roleName"));
+
+		employee.setRole(role);
+
+		empDao.addEmployee(employee);  
+
+		
+		
+		
+		/*	
+		Employee emp=new Employee();
+		Department dept=new Department();
+		project proj=new project();
+		Role rol=new Role();
+		
+		emp.setEmpid(int)empDetails.get(0);
+		emp.setEmpName(String)empDetails.get(1);
+		
+		dept.setDeptId(int)empDetails.get(2);
+		dept.setDeptName(String)empDetails.get(3);
+		
+		emp.setDepartment(dept);
+		
+		proj.setProjId(int)empDetails.get(4);
+		proj.setProjName(int)empDetails.get(5);
+		
+		proj.setDepartment(dept);
+		
+		emp.setProject(proj);
+		
+		rol.setRoleId(int)empDetails.get(6);
+		rol.setRoleName(String)empDetails.get(7);
+		emp.setRole(role);
+		empDao.addEmployee(emp);
+		*/
+		
+		
+		
+	}
+	
+	@Override
+	public void ModifyEmployee() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void RemoveEmployee() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void SearchEmployee() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void getAllEmployee() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,89 @@
+package com.flp.ems.domain;
+
+public class Employee {
+	public Department department;
+	public project project;
+	public Role role;
+	private int Empid;
+	private String EName;
+	private String Kin_id;
+	private String Email_id;
+	private int phone_no;
+	private String Date_of_Birth;
+	private String Date_of_Joining;
+	private String Address;
+	public Department getDepartment() {
+		return department;
+	}
+	public void setDepartment(Department department) {
+		this.department = department;
+	}
+	public project getProject() {
+		return project;
+	}
+	public void setProject(project project) {
+		this.project = project;
+	}
+	public Role getRole() {
+		return role;
+	}
+	public void setRole(Role role) {
+		this.role = role;
+	}
+	public int getEmpid() {
+		return Empid;
+	}
+	public void setEmpid(int empid) {
+		Empid = empid;
+	}
+	public String getEName() {
+		return EName;
+	}
+	public void setEName(String eName) {
+		EName = eName;
+	}
+	public String getKin_id() {
+		return Kin_id;
+	}
+	public void setKin_id(String kin_id) {
+		Kin_id = kin_id;
+	}
+	public String getEmail_id() {
+		return Email_id;
+	}
+	public void setEmail_id(String email_id) {
+		Email_id = email_id;
+	}
+	public int getPhone_no() {
+		return phone_no;
+	}
+	public void setPhone_no(int phone_no) {
+		this.phone_no = phone_no;
+	}
+	public String getDate_of_Birth() {
+		return Date_of_Birth;
+	}
+	public void setDate_of_Birth(String date_of_Birth) {
+		Date_of_Birth = date_of_Birth;
+	}
+	public String getDate_of_Joining() {
+		return Date_of_Joining;
+	}
+	public void setDate_of_Joining(String date_of_Joining) {
+		Date_of_Joining = date_of_Joining;
+	}
+	public String getAddress() {
+		return Address;
+	}
+	public void setAddress(String address) {
+		Address = address;
+	}
+	
+	
+	
+	
+	
+	
+	
+
+}

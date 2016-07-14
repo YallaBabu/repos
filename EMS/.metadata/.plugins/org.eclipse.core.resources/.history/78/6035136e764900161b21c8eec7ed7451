@@ -1,0 +1,79 @@
+package com.flp.ems.service;
+
+
+import java.util.Map;
+
+import com.flp.ems.dao.EmplyeeDaoImplForList;
+import com.flp.ems.dao.IemployeeDao;
+import com.flp.ems.domain.Department;
+import com.flp.ems.domain.Employee;
+import com.flp.ems.domain.Role;
+import com.flp.ems.domain.project;
+
+public class EmplyeeServiceImpl implements IEmployeeService {
+
+IemployeeDao empDao;
+public EmplyeeServiceImpl()
+{
+	empDao=new EmplyeeDaoImplForList();
+}
+	
+	
+	public void addEmployee(Map empDetails){
+	
+		Employee employee=new Employee();
+		Department department=new Department();
+		project project=new project();
+		Role role=new Role();
+
+		employee.setEmpid((Integer) empDetails.get("empId"));
+		employee.setEmpName((String) empDetails.get("empName"));
+
+		department.setDept_id((Integer) empDetails.get("Dept_Id"));
+		department.setDeptName((String) empDetails.get("deptName"));
+
+		employee.setDepartment(department);
+
+		project.setPro_id((Integer) empDetails.get("proj_Id"));
+		project.setProName((String) empDetails.get("proj_Name"));
+		project.setDepartment(department);
+
+		employee.setProject(project);
+
+		role.setRole_id((Integer) empDetails.get("Role_Id"));
+		role.setRName((String) empDetails.get("RName"));
+
+		employee.setRole(role);
+
+		empDao.addEmployee(employee);  
+
+		
+		
+	
+	}
+	
+	@Override
+	public void ModifyEmployee() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void RemoveEmployee() {
+		
+		
+	}
+
+	
+	public void SearchEmployee(int x){
+		
+		empDao.SearchEmployee(x);
+	}
+
+	@Override
+	public void getAllEmployee() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

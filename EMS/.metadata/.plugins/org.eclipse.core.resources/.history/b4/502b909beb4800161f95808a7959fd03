@@ -1,0 +1,11 @@
+package com.flp.ems.domain;
+
+public class project {
+	private Department department;
+	private String ProName;
+	private int Pro_id;
+	private String ProDescription;
+	
+	
+
+}

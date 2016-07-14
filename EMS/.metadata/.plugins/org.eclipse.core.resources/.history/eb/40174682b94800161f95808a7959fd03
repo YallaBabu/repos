@@ -1,0 +1,38 @@
+package com.flp.ems.domain;
+
+public class Employee {
+	public Department department;
+	public project project;
+	public Role role;
+	private int Emp_id;
+	private String Name;
+	private String Kin_id;
+	private String Email_id;
+	private int phone_no;
+	private String Date_of_Birth;
+	private String Date_of_Joining;
+	private String Address;
+	
+	public int getEmpId()
+	{
+		return Emp_id;
+		
+	}
+	public int setEmpId(int Emp_id)
+	{
+		this.Emp_id=Emp_id;
+		
+	}
+	public int getEmpId()
+	{
+		return Emp_id;
+		
+	}
+	
+	
+	
+	
+	
+	
+
+}

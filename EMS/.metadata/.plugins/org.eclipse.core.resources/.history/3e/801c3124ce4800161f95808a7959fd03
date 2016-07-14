@@ -1,0 +1,40 @@
+package com.flp.ems.service;
+
+import java.util.List;
+
+public class EmplyeeServiceImpl implements IEmployeeService {
+
+	public void addEmployee(List empDetails){
+	}
+	
+	@Override
+	public void ModifyEmployee() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void RemoveEmployee() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void SearchEmployee() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void getAllEmployee() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void addEmployee(List empDetails) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

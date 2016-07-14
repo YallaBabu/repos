@@ -1,0 +1,22 @@
+package com.flp.ems.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.flp.ems.domain.Department;
+import com.flp.ems.domain.Employee;
+import com.flp.ems.domain.Role;
+import com.flp.ems.domain.project;
+
+public class EmplyeeDaoImplForList implements IemployeeDao{
+
+	public void addEmployee( Employee emp)
+	{
+		List<Employee>employees=new ArrayList<Employee>();
+		List<Department>departments=new ArrayList<Department>();
+		List<project>projects=new ArrayList<project>();
+		List<Role>roles=new ArrayList<Role>();
+		
+	}
+
+}

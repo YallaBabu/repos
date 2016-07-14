@@ -1,0 +1,9 @@
+package com.flp.ems.domain;
+
+public class Department {
+	
+	private int Dept_id;
+	private String DeptName;
+	private String DeptDesc;
+
+}

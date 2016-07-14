@@ -1,0 +1,25 @@
+package com.flp.ems.domain;
+
+public class Employee {
+	public Department department;
+	public project project;
+	public Role role;
+	
+	private int empid;
+	private String empName;
+	private String Kin_id;
+	private String Email_id;
+	private int phone_no;
+	private String Date_of_Birth;
+	private String Date_of_Joining;
+	private String Address;
+
+	
+	
+	
+	
+	
+	
+	
+
+}

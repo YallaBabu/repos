@@ -1,0 +1,58 @@
+package com.flp.ems.view;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+import com.flp.ems.service.EmployeeServiceImpl;
+import com.flp.ems.service.IEmployeeService;
+
+public class UserInteraction {
+	Scanner sc=new Scanner(System.in);
+	
+	
+		
+		public UserInteraction()
+		{
+			empService=new EmployeeServiceImpl();
+		}
+		
+		public void AddEmployee()
+		{
+			List empDetails=new ArrayList();
+			System.out.println("Enter employee id");
+			empDetails.add(sc.nextInt());
+			System.out.println("Enter employee name");
+			empDetails.add(sc.next());
+			
+			System.out.println("Enter dept id");
+			empDetails.add(sc.nextInt());
+			System.out.println("Enter dept name");
+			empDetails.add(sc.next());
+			
+			System.out.println("Enter project id");
+			empDetails.add(sc.nextInt());
+			System.out.println("Enter project name");
+			empDetails.add(sc.next());
+			
+			System.out.println("Enter role id");
+			empDetails.add(sc.nextInt());
+			System.out.println("Enter role name");
+			empDetails.add(sc.next());
+			
+			empService.addEmployee(empDetails);
+		}
+		public void ModifyEmployee()
+		{}
+		public void RemoveEmployee()
+		{}
+		
+		public void SearchEmployee()
+		{}
+		
+		public void getAllEmployee(){}
+		
+
+	}
+
+
+
